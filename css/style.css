@@ -1329,23 +1329,7 @@ input[type='radio'].visually-hidden {
 	animation-name: pulse;
 }
 
-@keyframes fadeInDown {
-  0% {
-      opacity: 1;
-      transform: none;
-  }
-  100% {
-      opacity: 0;
-      transform: translate3d(0px, 100%, 0px);
-  }
-  }
 
-.products-popup-close {
-  display: block;
-  animation-duration: 0.6s;
-  animation-fill-mode: forwards;
-	animation-name: fadeInDown;
-}
 
 .products-close {
   position: absolute;
@@ -1501,12 +1485,7 @@ input[type='radio'].visually-hidden {
   animation: shake 0.6s;
 }
 
-.write-popup-close {
-  display: block;
-  animation-duration: 0.6s;
-  animation-fill-mode: forwards;
-	animation-name: fadeInDown;
-}
+
 
 .popup-close {
   position: absolute;
@@ -1661,12 +1640,6 @@ input[type='radio'].visually-hidden {
 	animation-name: bounceInLeft;
 }
 
-.popup-map-close {
-  display: block;
-  animation-duration: 0.6s;
-  animation-fill-mode: forwards;
-	animation-name: fadeInDown;
-}
 
 .map-window__interactive {
   z-index: 2;
