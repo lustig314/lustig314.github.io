@@ -24,7 +24,6 @@ try {
 productsLink.forEach(function(btn){
   btn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popupProducts.classList.remove("products-popup-close");
   popupProducts.classList.add("products-popup-show");
 });
 });
@@ -32,7 +31,6 @@ productsLink.forEach(function(btn){
 productsClose.addEventListener("click", function (evt){
   evt.preventDefault();
   popupProducts.classList.remove("products-popup-show");
-  popupProducts.classList.add("products-popup-close");
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -40,14 +38,12 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (popupProducts.classList.contains("products-popup-show")) {
       popupProducts.classList.remove("products-popup-show");
-      popupProducts.classList.add("products-popup-close");
     }
   }
 });
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.remove("write-popup-close");
   popup.classList.add("popup-show");
   if (storage) {
     popupName.value = storage;
@@ -61,7 +57,6 @@ close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("popup-show");
   popup.classList.remove("popup-error");
-  popup.classList.add("write-popup-close");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -83,7 +78,6 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("popup-show")) {
       popup.classList.remove("popup-show");
       popup.classList.remove("popup-error");
-      popup.classList.add("write-popup-close");
     }
   }
 });
@@ -91,13 +85,11 @@ window.addEventListener("keydown", function (evt) {
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupMap.classList.add("map-show");
-  popupMap.classList.remove("popup-map-close");
 });
 
 mapClose.addEventListener("click", function (evt){
   evt.preventDefault();
   popupMap.classList.remove("map-show");
-  popupMap.classList.add("popup-map-close");
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -105,7 +97,6 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (popupMap.classList.contains("map-show")) {
       popupMap.classList.remove("map-show");
-      popupMap.classList.add("popup-map-close");
     }
   }
 });
