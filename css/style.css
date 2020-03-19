@@ -410,6 +410,7 @@ input[type='radio'].visually-hidden {
 
 .menu-list__item:first-child  .menu-list__link {
   padding-left: 52px;
+  margin: 0;
 }
 
 .menu-list__item:last-child  .menu-list__link {
@@ -431,6 +432,11 @@ input[type='radio'].visually-hidden {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+}
+
+.menu-list__item_current {
+  background-color: #293449;
+  pointer-events: none;
 }
 
 .top__list-left {

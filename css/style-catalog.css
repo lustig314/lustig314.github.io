@@ -456,10 +456,18 @@ input[type='radio'].visually-hidden {
   padding-left: 52px;
 }
 
+.menu-list__item:nth-child(3)  .menu-list__link {
+  margin: 0;
+}
+
 .menu-list__item:last-child  .menu-list__link {
   padding-right: 61px;
 }
 
+.menu-list__item_current {
+  background-color: #293449;
+  pointer-events: none;
+}
 
 .menu-list__link:hover,
 .menu-list__link:focus {
